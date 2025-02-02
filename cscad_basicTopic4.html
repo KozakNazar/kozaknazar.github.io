@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матеріали курсу АМО</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="index.html">Головна</a> -->
+            <a class="navbar-brand" href="https://kozaknazar.github.io/">Головна</a>
+            <a class="navbar-brand" href="cscad.html">АПКС</a>
+            <a class="navbar-brand" href="https://vns.lpnu.ua/">ВНС</a>
+        </div>
+    </nav>
+	
+	<div class="container mt-4">
+	
+<!--         <section id="update_state">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366; border: 1px solid #007bff;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section> -->
+	
+        <section id="back_section_1">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section>
+	
+
+        <section id="lectures" class="mt-4">
+		
+<h3>Тема №4. Проектування комп`ютерних систем на рівні топології кристалу</h3>	
+<h3 class="fs-5">Основні аспекти проектування та формати представлення результатів моделювання та проектування.</h3>
+Потік проектування VLSI рівня топології кристалу. Стилі дизайну VLSI рівня топології кристалу. Формування списку з’єднань(NetList) на основі RTL-моделі. Планування частин кристалу(Floorplanning). Розміщення компонентів(Placement). Трасування з’єднань(Routing). Формування масок(Layout Generation). Масштабування елементів топології та характеристик режиму функціонування кристалу. Netlist-, EDIF-, DEF-, LIB-, DB-, LEF-, TF-, TLU-, IO-, SDC-, SDF-, VCD-, SPEF-, SPF-, GDS-, GDSII- та OASIS-формати даних процесу проектування. Використання мов TLC, Perl та Python для формування сценаріїв автоматизації процесу проектування. Використання SPICE/PSPICE для моделювання.
+<br>
+<h3 class="fs-5">Базові засоби автоматизованого проектування на рівні топології кристалу.</h3>
+Застосування засобу Genus Synthesis Solution(Cadence) та засобу Design Compiler(Synopsys) для синтезу на основі RTL-опису проекту. Застосування засобу Virtuoso Schematic Editor(Cadence) для внесення змін у проект. Застосування засобу Innovus Implementation System(Cadence) та IC Compiler II(Synopsys) для розміщення компонентів кристалу та трасування. Застосування засобу Virtuoso Layout Suite(Cadence) для роботи з макетом кристалу. Інші засоби.
+<br>
+<h3 class="fs-5">Верифікація проекту(англ. Signoff).</h3>
+<b><i>Функціональна верифікація проекту.</i></b> Задача функціональної верифікації. Застосування засобів Incisive Enterprise Verifier(Cadence) та Xcelium Logic Simulator(Cadence). Застосування засобу SpyGlass(Synopsys). Інші засоби.
+<br>
+<b><i>Верифікація аналогової частини проекту.</i></b> Застосування засобів Virtuoso ADE Product Suite(Cadence) та Spectre Simulation Platform(Cadence) для верифікації аналогової частини проекту.
+<br>
+<b><i>Модифікація проекту для тестоздатності(DFT Insertion).</i></b> Концепція DFT<i>(англ. Design For Testability)</i>. Концепція ATPG<i>(англ. Automatic Test Pattern Generation)</i>. Засоби TetraMax/TestMax(Cadence). Універсальна методика верифікації<i>(англ. Universal Verification Methodology, UVM)</i>.
+<br>
+<b><i>Формальна верифікація.</i></b> Задача формальної верифікації. Засіб Conformal Equivalence Checker(Cadence). Інші засоби.
+<br>
+<b><i>Статичний часовий аналіз.</i></b> Форми статичного часового аналізу. Засіб Tempus Timing Signoff Solution(Cadence). Засіб Primetime-SI(Synopsys) для відстеження цілісності сигналів<i>(англ. Signal Integrity)</i>.
+<br>
+<b><i>Верифікація живлення.</i></b> Аналіз спаду напруги<i>(англ. IR-Drop)</i> на ланках проекту. Засіб Voltus IC Power Integrity Solution(Cadence). Засіб PrimePower(Synopsys).
+<br>
+<b><i>Фізична верифікація.</i></b> Огляд концепцій фізичної верифікації. Перевірка правил проектування<i>(англ. Design Rule Checking)</i> та засіб Calibre nmDRC(Siemens, Mentor Graphics). Відповідність макету схемі<i>(англ. Layout Versus Schematic)</i> та засіб Calibre nmLVS(Siemens, Mentor Graphics).
+<br>
+<h3 class="fs-5">Екстракція негативних побічних ефектів(англ. Parasitic Extraction) та їх усунення.</h3>
+<b><i>Екстракція негативних побічні ефектів та їх усунення.</i></b> Формування схеми<i>(англ. Circuit Extraction)</i> з топологічної моделі. Екстракція негативних побічних ефектів<i>(англ. Parasitic Extraction)</i>. Усунення негативних побічних ефектів.
+<br>
+<b><i>Засоби екстракції негативних побічних ефектів.</i></b> Засіб Quantus Extraction Solution(Cadence). Інші засоби екстракції негативних побічних ефектів.
+<br>
+<h3 class="fs-5">Проектування для процесу виробництва(англ. Design for Manufacturing).</h3>
+<b><i>Процес виробництва та виробничо залежні ефекти.</i></b> Огляд процесу виробництва. Вплив ефектів процесу травлення<i>(англ. Effects of Etching Process)</i>. Хіміко-механічна планерезація<i>(англ. Chemical Mechanical Planarization)</i>. Особливості процесу літографії<i>(англ. Lithography)</i>. Вплив варіації ширини металу<i>(англ. Metal Width Variation)</i> та варіації товщини металу<i>(англ. Metal Thickness Variation)</i>. Огляд інших виробничо залежних ефектів.
+<br>
+<b><i>Засоби усунення виробничозалежних ефектів.</i></b> Засіб Calibre YieldEnhancer(Siemens, Mentor Graphics). Засіб Calibre YieldAnalyzer(Siemens, Mentor Graphics). Засіб Calibre CMPAnalyzer (Siemens, Mentor Graphics). Засіб Calibre LFD(Siemens, Mentor Graphics).
+			
+
+			
+        </section>
+		
+<!--         <section id="back_section_2">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366; border: 1px solid #007bff;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section> -->
+	
+	    <p/>
+	
+        <section id="back_section_2">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section>	
+
+    </div>		
+
+    <footer class="bg-dark text-light text-center p-3 mt-4">
+        <!-- <p>&copy; 2025 Алгоритми та моделі обчислень</p> -->
+        <p>&copy; 2025 Козак Назар. Всі права захищено.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
