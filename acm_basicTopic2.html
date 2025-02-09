@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матеріали курсу АМО</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="index.html">Головна</a> -->
+            <a class="navbar-brand" href="https://kozaknazar.github.io/">Головна</a>
+            <a class="navbar-brand" href="acm.html">АМО</a>
+            <a class="navbar-brand" href="https://vns.lpnu.ua/course/view.php?id=4594">ВНС</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="acm.html#labs">Лабораторні</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acm.html#practicals">Практичні</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acm.html#tests">Контрольні</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acm.html#homeworks">Домашні</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acm.html#lectures">Лекції</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	
+	<div class="container mt-4">
+	
+<!--         <section id="update_state">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366; border: 1px solid #007bff;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section> -->
+	
+        <section id="back_section_1">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section>
+	
+
+        <section id="lectures" class="mt-4">
+		
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:normal;layout-grid-mode:char'><b><i><span
+lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.
+Обчислювальна складність. </span></i></b></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.
+Складність по часу виконання алгоритму. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.1.
+Оцінка розміру вхідних даних. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.2.
+Залежність часу виконання від розміру вхідних даних. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.3.
+Аналіз нерекурсивних алгоритмів. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.4.
+Аналіз рекурсивних алгоритмів. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.5.
+Аналіз алгоритму для найкращого, середнього та найгіршого випадку. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.6.
+Асимптотичний аналіз. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.6.1.
+Загальні визначення.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.6.2.
+О-, о-, &#937;-, &#969;-, &#920;- нотації.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.7.
+Детермінований(DTIME) та недетермінований(NTIME) ресурси часу виконання. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.
+Здійсненні класи складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.1.
+DLONGTIME-клас складності<i>(логарифмічний)</i>. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.2.
+PolylogTIME-клас складності<i>(полілогарифмічний)</i>.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.3.
+P-клас складності(поліноміальний).</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.4.
+P-повні задачі. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.5.
+RP-клас та coRP-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.6.
+ZPP-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.7.
+BPP-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.8.8.
+BQP-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.
+Проблематичні класи складності. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.1.
+NP- та coNP- класи складності. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.2.
+Співвідношення між P- та NP- класами складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.3.
+NP- та coNP- повні задачі. Теорема Кука-Левіна. Стандартні NP-повні задачі.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.4.
+NP- складні, еквівалентні, проміжні та прості задачі</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.5.
+PP-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.6.
+UP-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.7.
+#P-клас<i>(вимовляється як «шарп П»)</i> складності та #P-повні задачі.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.9.8.
+</span><span lang=UK style='font-size:14.0pt;font-family:"Cambria Math",serif'>&#8853;</span><span
+lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>P-клас<i>(вимовляється
+як «паритет П»)</i> складності.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.
+Нездійсненні класи складності. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.1.
+EXPTIME-клас складності<i>(експоненціальний клас складності)</i>.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.2.
+NEXPTIME-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.3.
+2-EXPTIME-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.4.
+ELEMENTARY-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.5.
+R-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.6.
+PR-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.7.
+RE-клас складності та coRE-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.10.8.
+ALL-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.11.
+Аналіз паралельних алгоритмів.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.11.1.
+Особливості аналізу паралельних алгоритмів.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.11.2.
+Теорема Брента. Закон Густавсона–Барсіса. Закон Амдала.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.1.11.3.
+NC-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.
+Ємнісна(просторова) складність алгоритму<i>(складність по об’єму пам’яті)</i>.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.1.
+Визначення просторової складності алгоритму. </span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.2.
+Детермінований(DSPACE) та недетермінований(NSPACE) просторові(ємнісні) ресурси.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.3.
+Теорема Севіча.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.
+Здійсненні класи складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.1.
+L-клас складності. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.2.
+PolyL-клас складності<i>(полілогарифмічний)</i>.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.3.
+SL-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.4.
+NL-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.5.
+NL-повні задачі.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.6.
+Еквівалентність класів NL та coNL.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.4.7.
+RL-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.5.
+Проблематичні класи складності. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.5.1.
+PSPACE-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.5.2.
+PSPACE-повні задачі.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.6.
+Нездійсненні класи складності. </span></p>
+
+<p class=MsoNormal style='margin-left:106.2pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.1.2.6.1.
+EXPSPACE-клас складності<i>(експоненціальний клас складності по пам’яті)</i>.</span></p>
+
+<p class=MsoNormal style='line-height:normal;layout-grid-mode:char'><b><i><span
+lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.
+Структурна складність.</span></i></b></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.1.
+Цикломатична складність.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.1.1.
+Цикломатичне число.</span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.1.2.
+Цикломатична складність графу потоку керування та графу алгоритму.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.2.
+Структурна складність обчислень поданих структурною матрицею потокового графу
+алгоритму.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.3.
+AC<sup>i</sup>-класи складності.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.4.
+ACC<sup>0</sup>-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.5.
+TC<sup>i</sup>-класи складності.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2.6.
+CC-клас складності.</span></p>
+
+<p class=MsoNormal style='line-height:normal;layout-grid-mode:char'><b><i><span
+lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.
+Ієрархії класів складності.</span></i></b></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.1.
+Теорема про ієрархії класів часової складності.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.2.
+Теорема про ієрархії класів просторової складності.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.3.
+Поліноміальна ієрархія та PH-клас складності.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.4.
+Експоненціальна ієрархія. </span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.5.
+Ієрархія Гжегорчика. </span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.6.
+Арифметична ієрархія.</span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;line-height:normal;layout-grid-mode:
+char'><span lang=UK style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.3.7.
+Булева ієрархія.</span></p>
+
+<p class=MsoNormal><span lang=UK>&nbsp;</span></p>
+
+</div>
+
+        </section>
+		
+<!--         <section id="back_section_2">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366; border: 1px solid #007bff;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section> -->
+	
+	    <p/>
+	
+        <section id="back_section_2">
+            <h2 class="accordion-header">
+                <button class="accordion-button" style="background-color: #cce5ff; color: #003366;" type="button" onclick="goBack()"><h3 class="fs-5">Назад</h3></button>
+            </h2>
+        </section>	
+
+    </div>		
+
+    <footer class="bg-dark text-light text-center p-3 mt-4">
+        <!-- <p>&copy; 2025 Алгоритми та моделі обчислень</p> -->
+        <p>&copy; 2025 Козак Назар. Всі права захищено.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
